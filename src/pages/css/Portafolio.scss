@@ -1,0 +1,167 @@
+.bgPortafolio {
+  background: #27232C;
+  min-height: 520px;
+  position: absolute;
+  z-index: -1;
+  // max-height: 85vh;
+  width: 100%;
+}
+
+.contentPageDetail{
+  width: 55%;
+  margin: auto;
+}
+
+.portafolio {
+  // background: #F4F4F4;
+  position: relative;
+  width: 100%;
+
+  .layout {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+
+    button {
+      color: #fff;
+      background-color: #27232c;
+      border: none;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      margin-right: 7%;
+      cursor: pointer;
+      padding: 10px 25px;
+      position: relative;
+      border-radius: 8px;
+
+      span {
+        position: absolute;
+        font-size: 12px;
+        right: 4px;
+        top: 4px;
+      }
+    }
+
+    .activado {
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.content {
+  margin-top: 0;
+  width: 100%;
+  padding-top: 4%;
+  color: #fff;
+  // z-index: 1;
+}
+
+.top {
+  color: #fff;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icon {
+    margin-right: 20px;
+  }
+
+  span {
+    position: relative;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 68px;
+    margin-bottom: 11px;
+  }
+
+  p {
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+  }
+}
+
+.leadmore {
+  text-align: center;
+  padding: 2em 0px;
+
+  span {
+    color: #27232c;
+    font-size: 1.2rem;
+  }
+}
+
+.Content-CardsPort {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 3em;
+  // margin-top: -180px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media (max-width: 912px) {
+  .portafolio {
+    .layout {
+      button {
+        margin-right: 1%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .bgPortafolio {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 539px) {
+  .bgPortafolio {
+    min-height: 788px;
+  }
+  .portafolio {
+    .layout {
+      button {
+        margin-right: 0;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .bgPortafolio {
+    min-height: 830px;
+  }
+}
+

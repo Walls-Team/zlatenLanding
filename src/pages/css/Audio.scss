@@ -1,0 +1,125 @@
+.audio {
+    background: #F4F4F4;
+
+    .content {
+        margin-top: 0;
+        width: auto;
+        height: 600px;
+        padding-top: 90px;
+        color: #fFF;
+        background-image: url(../../assets/background.png);
+    }
+
+    .top {
+        min-height: 199px;
+        background-image: url(../../assets/background.png);
+        padding-right: 20%;
+
+
+        .title {
+            display: flex;
+            flex-direction: row;
+            width: 54%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #EBFFFF;
+            border-radius: 10px;
+            display: flex;
+            margin-right: 35px;
+
+            .icon {
+                align-self: center;
+                margin: 0 auto;
+                z-index: 1;
+            }
+
+            .rectangle {
+                position: absolute;
+                height: 80px;
+                width: 80px;
+                z-index: 0;
+            }
+        }
+
+
+        span {
+            position: relative;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 68px;
+            margin-bottom: 11px;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 54%;
+            margin-top: 0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 36px;
+        }
+    }
+
+    .layout {
+        margin-top: 72px;
+        margin-left: 152px;
+
+        button {
+            color: #fFF;
+            background-color: #27232C;
+            border: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            margin-right: 60px;
+            cursor: pointer;
+            padding-left: 27px;
+            padding-right: 27px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .activado {
+            border: 1px solid #FFF;
+            border-radius: 8px;
+        }
+    }
+}
+
+.leadmore {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    color: #27232C;
+}
+
+.ubica {
+    margin-top: -25px;
+    width: 100%;
+}

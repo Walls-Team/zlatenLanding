@@ -1,0 +1,68 @@
+{
+    "navbar": {
+        "home": "home",
+        "about": "about us",
+        "portafolio": "portafolio",
+        "connect": "connect with us"
+    },
+    "about": {
+        "about": "about us",
+        "header": "We make things better!",
+        "description": "For more than 20 years, we have realised all kinds of audio-visual projects: TV commercials, 3D and 2D animation projects, music videos, corporate films, documentaries films, PR events, castings, radio commercials, voice over and dubbing, etc.",
+        "who": "Who are we",
+        "history": "The company Studio Zlaten Vek was founded in 1995. It started as an audio-visual production and creative studio. Later in the years we close the cycle by creating an agency for full advertizing service along with the production part. This move has worked very well and we manage to create clear and accurate professional rules for working in advertizing. Today we are happy with the results."
+    },
+    "productions": {
+        "video": "video",
+        "audio": "audio",
+        "2d": "2D",
+        "creative": "creative",
+        "digital": "digital",
+        "3d": "3D",
+        "adapation": "adapation",
+        "own": "own production",
+        "sound": "sound recording",
+        "production": "production of radio commercials",
+        "prepress": "prepress",
+        "corporate": "corporate ID",
+        "copywriting": "copywriting",
+        "media": "media planning",
+        "view": "view all productions"
+    }, 
+    "footer": {
+        "follow": "follow us on:"
+    }, 
+    "portafolio": {
+        "portafolio": "portafolio",
+        "our": "our portafolio",
+        "services": "We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc.",
+        "productions": "all productions", 
+        "video": "video",
+        "digital": "digital",
+        "creative":"creative"
+    },
+    "home": {
+        "portafolio": "portafolio",
+        "help": "We Can help you grow...",
+        "great": "We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.",
+        "about": "about us",
+        "makes": "We makes thigs better",
+        "projects": "What we do: For more than 20 years, we have realised all kinds of audio-visual projects: TV commercials, 3D and 2D animation projects, music videos, corporate films, documentaries films, PR events, castings, radio commercials, voice over and dubbing, etc. For our clients we also offer all kind of media services like: media planning and buying, behavioural and demographic research focussed on the target group, negotiations with media and consulting."
+    },
+    "detail":{
+        "back": "BACK TO ALL PROJECTS",
+        "video": "video I video adaptation"
+    },
+    "contact": {
+        "connect": "connect with us",
+        "discuss": "Let's discuss",
+        "next": "your next project!",
+        "questions": "If you have any questions about video, audio production or something else in advertizing, give us a call!"
+    },
+    "header": {
+        "provide": "We provide full",
+        "service": "service for the needs",
+        "video": "of video production",
+        "share": "SHARE YOUR IDEA"
+    }
+}

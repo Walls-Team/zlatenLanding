@@ -1,0 +1,63 @@
+.header {
+  width: 100vw;
+  height: 110vh;
+  background-color: #27232C;
+  z-index: 1;
+
+  .content {
+    height: 70vh;
+    background-image: url("../../assets/fondImage.png");
+  }
+
+   .promo--image {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      object-fit: contain;
+   }
+              
+  .title {
+      color: aliceblue;
+      font-size: 2.5em;
+  } 
+
+.contentbuttonH{
+  width: 25%;
+  margin: 15px 0px;
+}
+
+.content-elements{
+  width: 75%;
+  margin-left: 20%;
+  padding-top: 3%;
+}
+
+} 
+.cards {
+  width: 75%;
+  float: right;
+}
+
+@media (max-width: 900px){
+  .header {
+    .promo--image {
+      display:none ;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .header {
+    .title {
+      font-size: 2em;
+    }
+  }
+}
+@media (max-width: 400px){
+  .header {
+    .title {
+      font-size: 1.5em;
+    }
+  }
+}
