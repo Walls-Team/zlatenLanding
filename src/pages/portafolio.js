@@ -123,7 +123,7 @@ const Portafolio = () => {
       title: "Project name",
       client: "Client: OLX",
       image: img2,
-      formato: "video | video adaptation",
+      formato: "Video | video adaptation",
       type: "video",
     },
     {
