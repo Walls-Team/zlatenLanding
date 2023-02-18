@@ -54,9 +54,10 @@
 .content {
   margin-top: 0;
   width: 100%;
+  height: 400px;
   padding-top: 4%;
   color: #fff;
-  background: #27232C;
+  background: #27232C;  
   // z-index: 1;
 }
 
@@ -100,6 +101,8 @@
 }
 
 .leadmore {
+  position: relative;
+  bottom: 65px;
   text-align: center;
   padding: 2em 0px;
 
@@ -110,11 +113,14 @@
 }
 
 .Content-CardsPort {
+  position: relative;
+  bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   margin: auto;
   padding-bottom: 3em;
+  justify-content: center;
   // margin-top: -180px;
 
   a {

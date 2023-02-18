@@ -11,8 +11,12 @@
     margin: auto;
 
     p {
-        font-size: 1.5em;
-        font-weight: 200;
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        line-height: 45px;
+        color: #707070;
+
     }
 
     a {
@@ -30,6 +34,26 @@
         font-weight: 200;
         margin-left: 10px;
         cursor: pointer;
+    }
+}
+.Content-CardsImg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 20px;
+    margin: auto;
+    padding-bottom: 3em;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 257px;
+    }
+    .card {
+        box-shadow: none;
+        width: 378px;
+    }
+    span, h4, h3, a{
+        position: absolute;
     }
 }
 

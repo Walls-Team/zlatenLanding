@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Portafolio.scss";
 import { Link } from "react-router-dom";
 import PageDetails from "../components/elements/pageDetails";
+import { DownloadIcon } from '../svg/iconsproductions'
 import {
   VideoIcon,
   AudioIcon,
@@ -122,6 +123,7 @@ const Portafolio = () => {
       id: 1,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Video | video adaptation",
       type: "video",
@@ -130,6 +132,7 @@ const Portafolio = () => {
       id: 2,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Audio | video adaptation",
       type: "audio",
@@ -138,6 +141,7 @@ const Portafolio = () => {
       id: 3,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD",
@@ -146,6 +150,7 @@ const Portafolio = () => {
       id: 4,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Creative | video adaptation",
       type: "creative",
@@ -154,6 +159,7 @@ const Portafolio = () => {
       id: 5,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Digital | video adaptation",
       type: "digital",
@@ -162,6 +168,7 @@ const Portafolio = () => {
       id: 6,
       title: "Project name",
       client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD",
@@ -175,8 +182,10 @@ const Portafolio = () => {
       imageSource={card.image}
       cliente={card.client}
       format={card.formato}
+      text={card.text}
       type={card.type}
       link={"/portafolio/detail"}
+      download={<DownloadIcon/>}
     />
   ));
 

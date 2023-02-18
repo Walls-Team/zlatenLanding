@@ -1,10 +1,10 @@
+import { text } from '@fortawesome/fontawesome-svg-core'
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
-import { DownloadIcon } from '../../svg/iconsproductions'
 import '../css/Card.scss'
 
 
-function Card({title, imageSource, cliente, format,type,id,link="/"}) {
+function Card({title, text, imageSource, cliente, format,type,id,link="/", download}) {
   const [info, setInfo] = useState()
   
   const types = {
@@ -34,11 +34,11 @@ function Card({title, imageSource, cliente, format,type,id,link="/"}) {
             fontWeight: '400',
             color: '#707070',
            }}
-           >
-            Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.</p>
+           >{text}
+            </p>
            <div className='contentElementsCard'>
-            <div style={{background: '#EBFFFF' }}>{format}</div>
-            <DownloadIcon/>
+            <span className='format'>{format}</span>
+            {download}
            </div>
       </div>
       </Link>
