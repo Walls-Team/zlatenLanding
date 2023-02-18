@@ -12,7 +12,7 @@ const About = () => {
       <div className="backgroundAbout"/>
       <div className="item-one">
         <span>{t("about.about")}</span>
-        <h1>{t("about.header")}</h1>
+        <h2>{t("about.header")}</h2>
         <p>{t("about.description")}</p>
       </div>
       <div className="images">

@@ -1,5 +1,4 @@
 .bgPortafolio {
-  background: #27232C;
   min-height: 520px;
   position: absolute;
   z-index: -1;
@@ -13,7 +12,7 @@
 }
 
 .portafolio {
-  // background: #F4F4F4;
+  background-color: #F4F4F4;
   position: relative;
   width: 100%;
 
@@ -58,6 +57,7 @@
   width: 100%;
   padding-top: 4%;
   color: #fff;
+  background: #27232C;
   // z-index: 1;
 }
 
@@ -75,8 +75,6 @@
 
   span {
     position: relative;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -85,8 +83,6 @@
 
   h1 {
     margin-top: 0;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 600;
     font-size: 52px;
     line-height: 68px;

@@ -27,7 +27,15 @@ function Card({title, imageSource, cliente, format,type,id,link="/"}) {
       <div className ="card-body">
            <h4>{title}</h4>
            <h3>{cliente}</h3>
-           <p>Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.</p>
+           <p style={{
+            fontFamily:'Open Sans',
+            fontSize: '16px',
+            lineHeight: '24px',
+            fontWeight: '400',
+            color: '#707070',
+           }}
+           >
+            Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.</p>
            <div className='contentElementsCard'>
             <div style={{background: '#EBFFFF' }}>{format}</div>
             <DownloadIcon/>
