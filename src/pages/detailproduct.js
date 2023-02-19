@@ -1,6 +1,6 @@
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Link } from "react-router-dom";
 import PageDetails from "../components/elements/pageDetails";
 import { DownloadIcon, VideoIcon, Preview } from "../svg/iconsproductions";
@@ -16,9 +16,10 @@ import Card from "../components/cards/Card";
 const src =
   "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4";
 
-
+   
 
 const DetailProduct = () => {
+  const [selected] = useState(false); 
   const images = [
     {
       id: 1,
@@ -98,13 +99,9 @@ const DetailProduct = () => {
           Eleifend pellentesque dolor tellus sapien senectus risus.
         </p>
       </div>
-      <div className="Content-CardsImg">{CardsImages}</div>
-      
+      <div className={selected === true ? "Content-CardsImg" : "hidden"}>{CardsImages}</div> 
     </>
   );
   
 };
-
-
-
 export default DetailProduct;
