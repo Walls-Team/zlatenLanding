@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import PageDetails from "../components/elements/pageDetails";
-import { DownloadIcon, VideoIcon } from "../svg/iconsproductions";
+import { DownloadIcon, VideoIcon, Preview } from "../svg/iconsproductions";
 import "./css/Detail.scss";
 import img1 from "../assets/olx1.png";
 import img2 from "../assets/olx2.png";
@@ -50,6 +50,7 @@ const DetailProduct = () => {
     <Card
       id={card.id}
       imageSource={card.image}
+      preview={<Preview/>}
       link={"/portafolio/detail"}
     />
     ));
