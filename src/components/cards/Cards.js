@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import '../css/CardsCarrousel.scss';
 import img2 from '../../assets/cliente1.png';
+import { DownloadIcon } from '../../svg/iconsproductions'
 
 export default function Cards() {
   const responsive = {
@@ -29,15 +30,17 @@ export default function Cards() {
     {
       id: 1,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "video | video adaptation",
+      formato: "Video | video adaptation",
       type: "video"
     },
     {
       id: 2,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Audio | video adaptation",
       type: "audio"
@@ -45,7 +48,8 @@ export default function Cards() {
     {
       id: 3,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD"
@@ -53,7 +57,8 @@ export default function Cards() {
     {
       id: 4,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Creative | video adaptation",
       type: "creative"
@@ -61,7 +66,8 @@ export default function Cards() {
     {
       id: 5,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Digital | video adaptation",
       type: "digital"
@@ -69,7 +75,8 @@ export default function Cards() {
     {
       id: 6,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD"
@@ -108,7 +115,7 @@ export default function Cards() {
 
   const cards_ = cards.map(card =>
     <div key={card.id}>
-      <Card title={card.title} imageSource={card.image} cliente={card.client} format={card.formato} type={card.type}
+      <Card title={card.title} imageSource={card.image} text={card.text} cliente={card.client} format={card.formato} type={card.type} download={<DownloadIcon/>}
       />
     </div>
   )

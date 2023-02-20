@@ -3,6 +3,7 @@ import "../css/Header.scss";
 import Cards from "../cards/Cards";
 import { useTranslation } from 'react-i18next';
 import ButtonYellow from "../elements/buttonYellow";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
           {t("header.provide")}<br/> {t("header.service")}<br/> {t("header.video")}
         </h1>
         <div className="contentbuttonH">
-        <ButtonYellow text="SHARE YOUR IDEA"/>
+          <ButtonYellow text="SHARE YOUR IDEA"/>
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Portafolio.scss";
 import { Link } from "react-router-dom";
 import PageDetails from "../components/elements/pageDetails";
+import { DownloadIcon } from '../svg/iconsproductions'
 import {
   VideoIcon,
   AudioIcon,
@@ -77,7 +78,7 @@ const Portafolio = () => {
           <PageDetails
             title="portafolio"
             subTitle="Video Productions"
-            description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
+            description="We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.  We focus on TV advertising, Music videos, Corporate films and Documentaries."
             icon={<VideoIcon />}
           />
         );
@@ -107,7 +108,7 @@ const Portafolio = () => {
           <PageDetails
             title="portafolio"
             subTitle="Audio Productions"
-            description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
+            description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music"
             icon={<AudioIcon />}
           />
         );
@@ -121,15 +122,17 @@ const Portafolio = () => {
     {
       id: 1,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "video | video adaptation",
+      formato: "Video | video adaptation",
       type: "video",
     },
     {
       id: 2,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Audio | video adaptation",
       type: "audio",
@@ -137,7 +140,8 @@ const Portafolio = () => {
     {
       id: 3,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD",
@@ -145,7 +149,8 @@ const Portafolio = () => {
     {
       id: 4,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Creative | video adaptation",
       type: "creative",
@@ -153,7 +158,8 @@ const Portafolio = () => {
     {
       id: 5,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "Digital | video adaptation",
       type: "digital",
@@ -161,7 +167,8 @@ const Portafolio = () => {
     {
       id: 6,
       title: "Project name",
-      client: "client: Olx",
+      client: "Client: OLX",
+      text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD",
@@ -175,8 +182,10 @@ const Portafolio = () => {
       imageSource={card.image}
       cliente={card.client}
       format={card.formato}
+      text={card.text}
       type={card.type}
       link={"/portafolio/detail"}
+      download={<DownloadIcon/>}
     />
   ));
 
@@ -194,7 +203,7 @@ const Portafolio = () => {
 
       <div className="leadmore">
         <Link to="/portafolio/allProductions">
-          <span>lead more</span>
+          <span>load more</span>
         </Link>
       </div>
     </div>

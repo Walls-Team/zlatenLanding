@@ -52,7 +52,7 @@ const Productions = () => {
         </div>
       </div>
       <div className='contentbuttonYP'>
-      <ButtonYellow text="VIEW ALL PRODUCTIONS"/>
+        <ButtonYellow text="VIEW ALL PRODUCTIONS"/>
       </div>
     </div>
   )

@@ -1,13 +1,61 @@
 .carousel-button-group{
     position: absolute;
-    bottom: -157px;
-    left: 230px;
+    bottom: -30%;
+    left: 16%;
     display: flex;
 }
 
 .carousel-button-left{
     margin-left: 10px;
 }
+
+@media (max-width: 1280px) {
+    .carousel-button-group{
+        bottom: -16%;
+        left: 14%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel-button-group{
+        bottom: -45%;
+        left: 14%;
+    }
+}
+
+@media (max-width: 912px) {
+    .carousel-button-group{
+        bottom: 13%;
+        left: 14%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .carousel-button-group{
+        bottom: -8%;
+        left: 6%;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-button-group{
+        bottom: -18%;
+        left: 14%;
+    }
+}
+
+@media (max-width: 280px) {
+    .carousel-button-group{
+        bottom: -35%;
+        left: 14%;
+    }
+}
+
+
+
+
+
 
 // @media (max-width: 900px){
 //     .carousel-button-group{
