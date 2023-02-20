@@ -78,7 +78,7 @@ const Portafolio = () => {
           <PageDetails
             title="portafolio"
             subTitle="Video Productions"
-            description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
+            description="We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.  We focus on TV advertising, Music videos, Corporate films and Documentaries."
             icon={<VideoIcon />}
           />
         );
@@ -108,7 +108,7 @@ const Portafolio = () => {
           <PageDetails
             title="portafolio"
             subTitle="Audio Productions"
-            description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
+            description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music"
             icon={<AudioIcon />}
           />
         );

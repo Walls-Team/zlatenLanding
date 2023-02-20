@@ -15,37 +15,36 @@ import Card from "../components/cards/Card";
 
 const src =
   "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4";
-
    
 
-const DetailProduct = () => {
-  const [selected] = useState(false); 
-  const images = [
-    {
-      id: 1,
-      image: img1,
-    },
-    {
-      id: 2,
-      image: img2,
-    },
-    {
-      id: 3,
-      image: img3,
-    },
-    {
-      id: 4,
-      image: img4,
-    },
-    {
-      id: 5,
-      image: img5,
-    },
-    {
-      id: 6,
-      image: img6,
-    },
-  ];
+  const DetailProduct = () => {
+    const [selected] = useState(true); 
+    const images = [
+      {
+        id: 1,
+        image: img1,
+      },
+      {
+        id: 2,
+        image: img2,
+      },
+      {
+        id: 3,
+        image: img3,
+      },
+      {
+        id: 4,
+        image: img4,
+      },
+      {
+        id: 5,
+        image: img5,
+      },
+      {
+        id: 6,
+        image: img6,
+      },
+    ];
 
   const CardsImages = images.map((card) => (
     <Card

@@ -54,7 +54,7 @@
 .content {
   margin-top: 0;
   width: 100%;
-  height: 400px;
+  height: 24rem;
   padding-top: 4%;
   color: #fff;
   background: #27232C;  
@@ -129,7 +129,12 @@
   }
 }
 
-@media (max-width: 912px) {
+@media (max-width: 1280px) {
+  
+  .content{
+    height: 32rem;
+  }
+
   .portafolio {
     .layout {
       button {
@@ -140,13 +145,35 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 912px) {
+  
+  .content{
+    height: 35rem;
+  }
+
+  .portafolio {
+    .layout {
+      button {
+        margin-right: 1%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 840px) { 
+  .content{
+    height: 45rem;
+  }
   .bgPortafolio {
     min-height: 600px;
   }
 }
 
 @media (max-width: 539px) {
+  .content{
+    height: 53rem;
+  }
   .bgPortafolio {
     min-height: 788px;
   }
@@ -161,6 +188,7 @@
 }
 
 @media (max-width: 360px) {
+  
   .bgPortafolio {
     min-height: 830px;
   }
