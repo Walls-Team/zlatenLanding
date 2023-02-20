@@ -1,8 +1,10 @@
 .header {
   width: 100vw;
-  height: 110vh;
+  height: 115vh;
   background-color: #27232C;
   z-index: 1;
+  overflow: hidden;
+  position: relative;
 
   .content {
     height: 70vh;
@@ -36,7 +38,9 @@
 } 
 .cards {
   width: 75%;
-  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
 }
 
 
@@ -75,9 +79,9 @@
     }
   }
 }
-@media (max-width: 400px){
+@media (max-width: 414px){
   .header {
-    height: 110vh;
+    height: 109vh;
     .title {
       font-size: 1.5em;
     }

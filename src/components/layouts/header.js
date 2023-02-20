@@ -23,10 +23,10 @@ const Header = () => {
         </div>
       </div>
 
+    </div>
       <div className="cards">
         <Cards />
       </div> 
-    </div>
   </div>
   );
 };

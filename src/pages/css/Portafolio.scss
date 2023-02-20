@@ -104,7 +104,9 @@
   position: relative;
   bottom: 65px;
   text-align: center;
-  padding: 2em 0px;
+  padding-top: 2em;
+  color: #27232c;
+  text-decoration: none;
 
   span {
     color: #27232c;
@@ -117,9 +119,9 @@
   bottom: 80px;
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 85%;
   margin: auto;
-  padding-bottom: 3em;
+  padding-bottom: 0.5em;
   justify-content: center;
   // margin-top: -180px;
 
@@ -133,6 +135,10 @@
   
   .content{
     height: 32rem;
+  }
+
+  .Content-CardsPort {
+    bottom: 212px;
   }
 
   .portafolio {
@@ -151,6 +157,10 @@
     height: 35rem;
   }
 
+  .contentPageDetail{
+    margin-top: 30px;
+  }
+
   .portafolio {
     .layout {
       button {
@@ -163,14 +173,14 @@
 
 @media (max-width: 840px) { 
   .content{
-    height: 45rem;
+    height: 37rem;
   }
   .bgPortafolio {
     min-height: 600px;
   }
 }
 
-@media (max-width: 539px) {
+@media (max-width: 540px) {
   .content{
     height: 53rem;
   }
@@ -188,9 +198,11 @@
 }
 
 @media (max-width: 360px) {
-  
   .bgPortafolio {
     min-height: 830px;
+  }
+  .contentPageDetail{
+    margin-top: 0px;
   }
 }
 
