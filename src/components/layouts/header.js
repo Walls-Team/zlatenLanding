@@ -12,9 +12,11 @@ const Header = () => {
 
   return (
   <div className="header">
+    <div className="gradient"/>
     <div className="content">
 
       <div className="content-elements">
+        
         <h1 className="title">
           {t("header.provide")}<br/> {t("header.service")}<br/> {t("header.video")}
         </h1>
@@ -23,10 +25,10 @@ const Header = () => {
         </div>
       </div>
 
+    </div>
       <div className="cards">
         <Cards />
       </div> 
-    </div>
   </div>
   );
 };

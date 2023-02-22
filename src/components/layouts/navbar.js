@@ -19,7 +19,9 @@ const Navbar = () => {
       <div className="navbar">
         <div className="left">
           <div>
-            <img className="nav-logo" src='/logo.png' alt='logo-zlaten' />
+            <Link to='/'>
+              <img className="nav-logo" src='/logo.png' alt='logo-zlaten' />
+            </Link>
           </div>
         </div>
         <div className="right">

@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import '../css/Card.scss'
 
-function Card({title, text, imageSource, cliente, format,type,id,link="/", download, preview}) {
+function Card({title, text, imageSource, cliente, format,type,view,id,link="/", download, preview}) {
   const [info, setInfo] = useState()
   
   const types = {
@@ -42,6 +42,7 @@ function Card({title, text, imageSource, cliente, format,type,id,link="/", downl
             <span className='format'>{format}</span>
             {download}
            </div>
+           <span className='view'>{view}</span>
       </div>
       </Link>
     </div>

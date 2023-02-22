@@ -125,9 +125,10 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Video | video adaptation",
+      formato: "video | video adaptation",
       type: "video",
       preview: <Play/>,
+      view: "view more",
     },
     {
       id: 2,
@@ -135,9 +136,10 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Audio | video adaptation",
+      formato: "audio | video adaptation",
       type: "audio",
       preview: <PlayMusic/>,
+      view: "view more",
     },
     {
       id: 3,
@@ -148,6 +150,7 @@ const Portafolio = () => {
       formato: "2D | video adaptation",
       type: "twoD",
       preview: <Play/>,
+      view: "view more",
     },
     {
       id: 4,
@@ -155,8 +158,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Creative | video adaptation",
+      formato: "creative | video adaptation",
       type: "creative",
+      view: "view more",
     },
     {
       id: 5,
@@ -164,8 +168,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Digital | video adaptation",
+      formato: "digital | video adaptation",
       type: "digital",
+      view: "view more",
     },
     {
       id: 6,
@@ -176,6 +181,7 @@ const Portafolio = () => {
       formato: "3D | video adaptation",
       type: "threeD",
       preview: <Play/>,
+      view: "view more",
     },
   ];
 
@@ -191,6 +197,7 @@ const Portafolio = () => {
       preview={card.preview}
       link={"/portafolio/detail"}
       download={<DownloadIcon/>}
+      view={card.view}
     />
   ));
 

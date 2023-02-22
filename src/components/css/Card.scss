@@ -8,7 +8,7 @@ h4 {
 .card{
     margin: 10px;
     height: 50%;
-    width: 20rem;
+    width: 19.4rem;
     background-color: rgb(255, 255, 255);
     // box-shadow: 1px 1px 3px rgb(104, 104, 104);
     box-shadow: 2.9px 2.9px 2px 1px rgb(0 0 0 / 10%);
@@ -50,6 +50,35 @@ h4 {
 }
 .card-body {
     margin: 10px 20px;
+
+    h4{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #27232C;
+    }
+
+    h3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        color: #27232C;
+    }
+
+    .view{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+        color: #27232C
+    }
 }
 
 .product--image {
