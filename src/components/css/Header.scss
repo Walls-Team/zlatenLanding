@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  height: 115vh;
+  height: 150vh;
   background-color: #27232C;
   z-index: 1;
   overflow: hidden;
@@ -39,7 +39,7 @@
 .cards {
   width: 75%;
   position: absolute;
-  bottom: 10px;
+  bottom: 54px;
   right: 0;
 }
 
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 280px){
+@media (max-width: 375px){
   .header {
     height: 125vh;
     .title {
