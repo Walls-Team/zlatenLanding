@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Portafolio.scss";
 import { Link } from "react-router-dom";
 import PageDetails from "../components/elements/pageDetails";
-import { DownloadIcon } from '../svg/iconsproductions'
+import { DownloadIcon, Play, PlayMusic } from '../svg/iconsproductions'
 import {
   VideoIcon,
   AudioIcon,
@@ -67,7 +67,7 @@ const Portafolio = () => {
       case 1:
         return (
           <PageDetails
-            title="portafolio"
+            title="portfolio"
             subTitle="Our portafolio"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
           />
@@ -76,8 +76,8 @@ const Portafolio = () => {
       case 2:
         return (
           <PageDetails
-            title="portafolio"
-            subTitle="Video Productions"
+            title="portfolio"
+            subTitle="Video productions"
             description="We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.  We focus on TV advertising, Music videos, Corporate films and Documentaries."
             icon={<VideoIcon />}
           />
@@ -86,8 +86,8 @@ const Portafolio = () => {
       case 3:
         return (
           <PageDetails
-            title="portafolio"
-            subTitle="Digital Productions"
+            title="portfolio"
+            subTitle="Digital productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
             icon={<DigitalIcon />}
           />
@@ -96,8 +96,8 @@ const Portafolio = () => {
       case 4:
         return (
           <PageDetails
-            title="portafolio"
-            subTitle="Creative Productions"
+            title="portfolio"
+            subTitle="Creative productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
             icon={<CreativeIcon />}
           />
@@ -106,8 +106,8 @@ const Portafolio = () => {
       case 5:
         return (
           <PageDetails
-            title="portafolio"
-            subTitle="Audio Productions"
+            title="portfolio"
+            subTitle="Audio productions"
             description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music"
             icon={<AudioIcon />}
           />
@@ -127,6 +127,7 @@ const Portafolio = () => {
       image: img2,
       formato: "Video | video adaptation",
       type: "video",
+      preview: <Play/>,
     },
     {
       id: 2,
@@ -136,6 +137,7 @@ const Portafolio = () => {
       image: img2,
       formato: "Audio | video adaptation",
       type: "audio",
+      preview: <PlayMusic/>,
     },
     {
       id: 3,
@@ -145,6 +147,7 @@ const Portafolio = () => {
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD",
+      preview: <Play/>,
     },
     {
       id: 4,
@@ -172,6 +175,7 @@ const Portafolio = () => {
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD",
+      preview: <Play/>,
     },
   ];
 
@@ -184,6 +188,7 @@ const Portafolio = () => {
       format={card.formato}
       text={card.text}
       type={card.type}
+      preview={card.preview}
       link={"/portafolio/detail"}
       download={<DownloadIcon/>}
     />

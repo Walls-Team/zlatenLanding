@@ -2,7 +2,7 @@
     "navbar": {
         "home": "home",
         "about": "about us",
-        "portafolio": "portafolio",
+        "portafolio": "portfolio",
         "connect": "connect with us"
     },
     "about": {
@@ -33,8 +33,8 @@
         "follow": "follow us on:"
     },
     "portafolio": {
-        "portafolio": "portafolio",
-        "our": "our portafolio",
+        "portafolio": "portfolio",
+        "our": "our portfolio",
         "services": "We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc.",
         "productions": "all productions", 
         "video": "video",
@@ -42,8 +42,8 @@
         "creative":"creative"
     }, 
     "home": {
-         "portafolio": "portafolio",
-         "help": "We Can help you grow...",
+         "portafolio": "portfolio",
+         "help": "We can help you grow...",
          "great": "We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.",
          "about": "about us",
          "makes": "We makes thigs better",
