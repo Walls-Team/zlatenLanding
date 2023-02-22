@@ -50,6 +50,35 @@ h4 {
 }
 .card-body {
     margin: 10px 20px;
+
+    h4{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #27232C;
+    }
+
+    h3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        color: #27232C;
+    }
+
+    .view{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+        color: #27232C
+    }
 }
 
 .product--image {

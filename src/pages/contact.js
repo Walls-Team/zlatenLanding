@@ -43,8 +43,9 @@ const Contact = () => {
             placeholder="Write us a message"
           />
         </div>
-
-        <ButtonYellow text="SUBMIT YOUR IDEA"/>
+        <div className="submit">
+          <ButtonYellow text="SUBMIT YOUR IDEA"/>
+        </div>
       </div>
     </div>
   );

@@ -77,7 +77,7 @@ const Portafolio = () => {
         return (
           <PageDetails
             title="portafolio"
-            subTitle="Video Productions"
+            subTitle="Video productions"
             description="We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.  We focus on TV advertising, Music videos, Corporate films and Documentaries."
             icon={<VideoIcon />}
           />
@@ -87,7 +87,7 @@ const Portafolio = () => {
         return (
           <PageDetails
             title="portafolio"
-            subTitle="Digital Productions"
+            subTitle="Digital productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
             icon={<DigitalIcon />}
           />
@@ -97,7 +97,7 @@ const Portafolio = () => {
         return (
           <PageDetails
             title="portafolio"
-            subTitle="Creative Productions"
+            subTitle="Creative productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
             icon={<CreativeIcon />}
           />
@@ -107,7 +107,7 @@ const Portafolio = () => {
         return (
           <PageDetails
             title="portafolio"
-            subTitle="Audio Productions"
+            subTitle="Audio productions"
             description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music"
             icon={<AudioIcon />}
           />
@@ -125,8 +125,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Video | video adaptation",
+      formato: "video | video adaptation",
       type: "video",
+      view: "view more",
     },
     {
       id: 2,
@@ -134,8 +135,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Audio | video adaptation",
+      formato: "audio | video adaptation",
       type: "audio",
+      view: "view more",
     },
     {
       id: 3,
@@ -145,6 +147,7 @@ const Portafolio = () => {
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD",
+      view: "view more",
     },
     {
       id: 4,
@@ -152,8 +155,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Creative | video adaptation",
+      formato: "creative | video adaptation",
       type: "creative",
+      view: "view more",
     },
     {
       id: 5,
@@ -161,8 +165,9 @@ const Portafolio = () => {
       client: "Client: OLX",
       text: "Short description of the project goes here.  Ipsum dolor sit amet, consectetur adipiscing elit fsfffee.",
       image: img2,
-      formato: "Digital | video adaptation",
+      formato: "digital | video adaptation",
       type: "digital",
+      view: "view more",
     },
     {
       id: 6,
@@ -172,6 +177,7 @@ const Portafolio = () => {
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD",
+      view: "view more",
     },
   ];
 
@@ -186,6 +192,7 @@ const Portafolio = () => {
       type={card.type}
       link={"/portafolio/detail"}
       download={<DownloadIcon/>}
+      view={card.view}
     />
   ));
 
