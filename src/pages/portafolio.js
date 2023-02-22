@@ -68,7 +68,7 @@ const Portafolio = () => {
         return (
           <PageDetails
             title="portfolio"
-            subTitle="Our portafolio"
+            subTitle="Our portfolio"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
           />
         );
