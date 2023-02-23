@@ -121,7 +121,7 @@ export default function Cards() {
   )
   return (
     <div className='clientes'>
-      <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
+      <Carousel responsive={responsive}  arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />} className="carousel">
         {cards_}
       </Carousel>
     </div>

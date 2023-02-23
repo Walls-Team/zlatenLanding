@@ -7,7 +7,7 @@
   position: relative;
   .gradient {
     position: absolute;
-    background: linear-gradient(90deg, #27232C 0%, rgba(1, 1, 1, 0.8) 54.69%, rgba(217, 217, 217, 0) 100%); 
+    background: linear-gradient(90deg, #27232C 0%, rgba(1, 1, 1, 0.8) 54.69%, rgba(217, 217, 217, 0) 100%);
     width: 735.49px;
     height: 100%;
     z-index: 0;
@@ -37,10 +37,20 @@
   padding-top: 3%;
 }
 .cards {
-  width: 75%;
+  width: 65%;
   position: absolute;
   bottom: 104px;
   right: 0;
+  .card{
+    width: 23rem;
+  }
+  .carousel{
+    max-width: 1230px;
+    min-width: 1230px;
+  }
+  .clientes {
+    position: relative;
+  }
 }
 }
 @media (min-width: 1580px){
@@ -56,18 +66,25 @@
         width: 24rem;
         height: 80%;
       }
-    }
-   
+    }   
+    
   }
 }
 @media (max-width: 1280px){
   .header {
-   
     height: 180vh;
-    .title {
-      font-size: 2em;
+    .contentbuttonH{
+      width: 280px;
+      margin: 15px 0px;
     }
-   
+    .cards{
+      .card{
+        width: 23rem;
+      }
+    }
+    .title {
+      font-size: 2.5em;
+    }
   }
 }
 
@@ -81,9 +98,8 @@
     .cards{
       top: 350px;
       .card{
-        width: 22rem;
+        width: 24rem;
       }
-
     }
   }
 }
@@ -91,17 +107,30 @@
 @media (max-width: 912px){
   .header {
     height: 220vh;
-    .promo--image {
-      display:none ;
-    }
   }
 }
 
 @media (max-width: 820px){
   .header {
-    height: 300vh;
+    height: 285vh;
     .title {
       font-size: 2em;
+    }
+    .content {
+      background-image: url("../../assets/fondImage.png");
+      background-position: -250px;
+      height: 40rem;
+    }
+    .cards{
+      top: 350px;
+      right: 80px;
+      .card{
+        width: 24rem;
+      }
+      .carousel{
+        max-width: 900px;
+        min-width: 900px;
+      }
     }
   }
 }
