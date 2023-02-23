@@ -2,40 +2,39 @@
   display: flex;
   flex-direction: column;
   color: #fff;
-  width: 60%;
+  width: 70%;
   align-items: flex-start;
   margin: auto;
 
-  .connect-with{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
+  .connect-with {
+    width: 481px;
+    height: 24px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2px
   }
 
   h1{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 52px;
+    //margin-top: 10px;
+    font-weight: 400;
+    font-size: 60px;
     line-height: 68px;
   }
 
   p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Montserrat';
+    font-weight: 100;
     font-size: 21px;
-    line-height: 36px;
+    line-height: 45px;
+    width: 90%;
   }
   
 }
 
 .bg-contact-us {
   background: #27232c;
-  padding: 60px 0px;
+  padding: 60px 0px
 }
 
 .form {
@@ -63,21 +62,22 @@
 .with-us {
   display: flex;
   flex-wrap: wrap;
-  width: 120%;
+  width: 140%;
 
   div {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
+    margin-right: 20px;
   }
 
   span {
     margin: 0px 5px 0px 3px;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0.5px;
   }
 }
 

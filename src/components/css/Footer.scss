@@ -26,13 +26,15 @@
         width: 40px;
         height: 40px;
     }
-
-    .right-reserved {
-        font-family: 'Open Sans';
-        font-style: normal;
+    span{
+        text-decoration: none;
         font-weight: 400;
+        font-style: normal;
         font-size: 14px;
         line-height: 21px;
+        letter-spacing: 0.3px;
+    }
+    .right-reserved {
         text-align: center;
         color: #27232C;
         margin-top: 10px;
