@@ -82,7 +82,7 @@ p {
 
 @media (max-width: 600px) {
     .backgroundAbout{
-        height: 100%;
+        height: 65rem;
     }
     .images{
     .img1{
@@ -93,4 +93,22 @@ p {
         width: 47%;
         height: 50%;
     }}
+}
+
+@media (max-width: 280px) {
+    .about{
+        .backgroundAbout{
+            height: 80rem;
+            width: 140%;
+        }
+        .images{
+        .img1{
+            width: 50%;
+            height: 50%;
+        }
+        .img2{
+            width: 47%;
+            height: 50%;
+        }}
+    }
 }

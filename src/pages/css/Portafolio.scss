@@ -168,7 +168,12 @@
 @media (max-width: 912px) {
   .portafolio {
   .content{
-    height: 45rem;
+    height: 42rem;
+    .top{
+      .title{
+        display: grid;
+      }
+    }
   }
 
   .contentPageDetail{
@@ -179,6 +184,7 @@
       justify-content: center;
       display: flex;
       flex-wrap: nowrap;
+      text-align: center;
       
       button {
         margin-right: 20px;
@@ -186,7 +192,6 @@
       }
   }
   .Content-CardsPort {
-    bottom: 250px;
     width: 100%;
   }
 }
@@ -200,10 +205,10 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 541px) {
   }
   .content{
-    height: 53rem;
+    height: 55rem;
   }
   .bgPortafolio {
     min-height: 788px;
@@ -219,25 +224,40 @@
 
     }
     .Content-CardsPort {
-
-      bottom: 280px;
       width: 100%;
     }
   }
 }
 
-@media (max-width: 480px) {
-  .portafolio{
-  .layout{
-    
+@media (max-width: 415px) {
+  .portafolio {
+  .content{
+    height: 70rem;
+    .top{
+      .title{
+        display: grid;
+      }
+    }
   }
-}
-  .bgPortafolio {
-    min-height: 830px;
-  }
-  .contentPageDetail{
 
-    margin-top: 0px;
+  .contentPageDetail{
+    margin-top: 30px;
+    width: 80%;
+  }
+    .layout {
+      justify-content: center;
+      flex-wrap: nowrap;
+      
+      button {
+        margin-right: 20px;
+
+      }
+  }
+  .Content-CardsPort {
+    width: 100%;
+  }
   }
 }
+
+
 
