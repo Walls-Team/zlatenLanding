@@ -8,6 +8,7 @@
     width: 100%;
     padding: 0;
     background-color: white;
+
     .follow {
         font-family: 'Montserrat';
         font-style: normal;
@@ -26,7 +27,8 @@
         width: 40px;
         height: 40px;
     }
-    span{
+
+    span {
         text-decoration: none;
         font-weight: 400;
         font-style: normal;
@@ -34,11 +36,14 @@
         line-height: 21px;
         letter-spacing: 0.3px;
     }
+
     .right-reserved {
         text-align: center;
         color: #27232C;
         margin-top: 10px;
         font-family: 'Open Sans';
+        padding: 0 25px;
+        margin-bottom: 15px;
     }
 
     .icons {
