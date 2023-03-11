@@ -1,8 +1,8 @@
-.content-text{
+.content-text {
     margin: 80px auto;
     width: 60%;
 
-    p{
+    p {
         margin-left: 50px;
         font-family: 'Open Sans';
         font-style: normal;
@@ -10,12 +10,14 @@
         font-size: 21px;
         line-height: 36px;
     }
-    h2{
+
+    h2 {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 2px;
     }
-    h3{
+
+    h3 {
         font-weight: 600;
         font-family: 'Montserrat';
         font-size: 44px;
@@ -23,10 +25,27 @@
     }
 }
 
-.background{
+.background {
     color: white;
     background-color: #27232C;
     width: 100%;
     padding: 5px 0;
     margin-top: 60px;
+}
+
+@media (max-width: 540px) {
+    .content-text {
+        margin: 80px auto 55px;
+        width: 69%;
+
+        p {
+            margin-left: 0;
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 34px;
+            line-height: 38px;
+        }
+    }
 }
