@@ -1,5 +1,4 @@
-
-.images{
+.images {
     display: flex;
     margin: auto;
     width: 50%;
@@ -8,29 +7,32 @@
     margin-top: 5em;
 
     .img1 {
-        width: 40%;
-        height: 50%;
+        width: 45%;
+        height: 55%;
         margin-right: 3%;
     }
 
-    .img2{
+    .img2 {
         width: 40%;
         height: 50%;
         position: relative;
         top: 4em;
     }
 }
-span{
+
+span {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2px;
 }
-h2{
+
+h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 54px;
 }
+
 p {
     font-family: 'Open Sans';
     font-style: normal;
@@ -38,77 +40,81 @@ p {
     font-size: 21px;
     line-height: 36px;
 }
-.item-one{
+
+.item-one {
     margin: auto;
-    width: 50%;
+    width: 56%;
     padding-top: 70px;
     color: #fff;
+    margin-left: 200px;
 }
 
-.item-two{
+.item-two {
     margin: auto;
     width: 50%;
     padding-bottom: 50px;
-    span{
+
+    span {
         color: #707070;
     }
-    p{
+
+    p {
         margin-left: 50px;
     }
 }
 
-.backgroundAbout{
+.backgroundAbout {
     background: #27232C;
     width: 100%;
-    height: 70vh;    
+    height: 626px;
     position: absolute;
     z-index: -1;
 }
 
-@media (max-width: 1000px) {
-    .backgroundAbout{
-        height: 50%;
+@media (max-width: 820px) {
+    .item-one {
+        margin-left: 0;
+        margin: auto;
     }
-    .images{
-    .img1{
-        width: 50%;
-        height: 50%;
-    }
-    .img2{
-        width: 47%;
-        height: 50%;
-    }}
 }
 
-@media (max-width: 600px) {
-    .backgroundAbout{
-        height: 60rem;
+@media (max-width: 540px) {
+    .backgroundAbout {
+        background: linear-gradient(179deg, #27232C 10%, rgba(1, 1, 1, 0.85) 72.69%, rgba(217, 217, 217, 0) 100%);
     }
-    .images{
-    .img1{
-        width: 50%;
-        height: 50%;
+
+    .images {
+        width: 70%;
     }
-    .img2{
-        width: 47%;
-        height: 50%;
-    }}
+
+    .item-one {
+        width: 66%;
+    }
+
+    .item-two {
+        width: 66%;
+    }
+
+    .item-two p {
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
 }
 
 @media (max-width: 280px) {
-    .about{
-        .backgroundAbout{
-            height: 80rem;
+    .about {
+        .backgroundAbout {
+            height: 48rem;
             width: 140%;
         }
-        .images{
-        .img1{
-            width: 50%;
-            height: 50%;
-        }
-        .img2{
-            width: 47%;
-            height: 50%;
-        }}
     }
 }
