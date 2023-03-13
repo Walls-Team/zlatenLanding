@@ -1,9 +1,23 @@
+*{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/assets/fonts/Montserrat.woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../src/assets/fonts/OpenSans.woff2');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat';
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
