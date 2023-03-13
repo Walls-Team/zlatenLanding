@@ -39,6 +39,7 @@ p {
     line-height: 36px;
 }
 .item-one{
+    font-family: 'Montserrat';
     margin: auto;
     width: 50%;
     padding-top: 70px;
@@ -46,6 +47,7 @@ p {
 }
 
 .item-two{
+    font-family: 'Montserrat';
     margin: auto;
     width: 50%;
     padding-bottom: 50px;
@@ -65,9 +67,24 @@ p {
     z-index: -1;
 }
 
+@media (max-width: 1024px) {
+    .backgroundAbout{
+        height: 90vh;
+    }
+    .images{
+    .img1{
+        width: 50%;
+        height: 50%;
+    }
+    .img2{
+        width: 47%;
+        height: 50%;
+    }}
+}
+
 @media (max-width: 1000px) {
     .backgroundAbout{
-        height: 50%;
+        height: 70%;
     }
     .images{
     .img1{

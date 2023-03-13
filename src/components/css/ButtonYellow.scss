@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat.woff2');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/OpenSans.woff2');
+  }
+  
+
 .button-yellow {
     display: flex;
     justify-content: center;
@@ -34,11 +45,11 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 1px;
+        font-family: 'Montserrat';
     }
 }
 
 @media (max-width: 1115px) {
-
     #link {
         width: 150px;
         height: 35px;
