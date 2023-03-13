@@ -4,7 +4,6 @@ import "./css/Contact.scss";
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-
   const [t] = useTranslation("global");
 
   return (
@@ -12,10 +11,10 @@ const Contact = () => {
       <div className="contact-us">
         <span className="connect-with">{t("contact.connect")}</span>
         <h1>
-        {t("contact.discuss")} <br /> {t("contact.next")}
+          {t("contact.discuss")} <br /> {t("contact.next")}
         </h1>
         <p>
-        {t("contact.questions")}
+          {t("contact.questions")}
         </p>
         <div className="with-us">
           <div>
@@ -44,7 +43,7 @@ const Contact = () => {
           />
         </div>
         <div className="submit">
-          <ButtonYellow text="SUBMIT YOUR IDEA"/>
+          <ButtonYellow text="SUBMIT YOUR IDEA" className={'linkButton'} />
         </div>
       </div>
     </div>

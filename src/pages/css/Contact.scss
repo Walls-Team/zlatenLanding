@@ -15,21 +15,21 @@
     letter-spacing: 2px
   }
 
-  h1{
+  h1 {
     font-weight: 600;
     font-size: 52px;
     line-height: 68px;
     font-family: 'Montserrat';
   }
 
-  p{
+  p {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 21px;
     line-height: 45px;
     width: 90%;
   }
-  
+
 }
 
 .bg-contact-us {
@@ -63,7 +63,7 @@
 .with-us {
   display: flex;
   flex-wrap: wrap;
-  width: 140%;
+  width: 100%;
 
   div {
     display: flex;
@@ -87,51 +87,96 @@
   grid-column: 1/3;
 }
 
-@media (max-width: 541px) {
-  .bg-contact-us{
+.linkButton {
+  width: 102% !important;
+}
+
+@media (max-width: 912px) {
+  .bg-contact-us {
     width: 100%;
+
     .form {
       display: contents;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
     }
-    .with-us{
+
+    .with-us {
       display: contents;
-      div{
-          margin-top: 10px;
-          margin-bottom: 10px;
+      width: 100%;
+
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
   }
 }
 
-@media (max-width: 912px) {
-  .bg-contact-us{
+@media (max-width: 541px) {
+  .contact-us {
+    .connect-with {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+
+  .bg-contact-us {
     width: 100%;
+
     .form {
       display: contents;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
     }
-    .with-us{
+
+    .with-us {
       display: contents;
-      
-      div{
-          margin-top: 10px;
-          margin-bottom: 10px;
+
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
   }
 }
 
 @media (max-width: 414px) {
-  .bg-contact-us{
-    width: 160%;
+  .bg-contact-us {
+    width: 100%;
+
     .form {
       display: contents;
     }
-    .with-us{
+
+    .with-us {
       display: contents;
-      div{
-          margin-top: 10px;
-          margin-bottom: 10px;
+
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
+  }
+}
+
+@media (max-width: 280px) {
+  .bg-contact-us {
+    width: 160%;
   }
 }

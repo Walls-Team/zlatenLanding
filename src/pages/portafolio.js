@@ -14,8 +14,9 @@ import Card from "../components/cards/Card";
 
 const Portafolio = () => {
   const [selected, setSelected] = useState(1);
+  const screenWidth = window.innerWidth;
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   const onClickSelected = (number) => {
     setSelected(number);
@@ -79,7 +80,7 @@ const Portafolio = () => {
             title="portfolio"
             subTitle="Video productions"
             description="We do not promise big things. We do great things, because we know that in the world of promises you can die of hunger.  We focus on TV advertising, Music videos, Corporate films and Documentaries."
-            icon={<VideoIcon />}
+            icon={<VideoIcon width={screenWidth <= 500 ? 80 : 80} />}
           />
         );
 
@@ -89,7 +90,7 @@ const Portafolio = () => {
             title="portfolio"
             subTitle="Digital productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
-            icon={<DigitalIcon />}
+            icon={<DigitalIcon width={screenWidth <= 500 ? 80 : 80} />}
           />
         );
 
@@ -99,7 +100,7 @@ const Portafolio = () => {
             title="portfolio"
             subTitle="Creative productions"
             description="We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc."
-            icon={<CreativeIcon />}
+            icon={<CreativeIcon width={screenWidth <= 500 ? 80 : 80} />}
           />
         );
 
@@ -108,8 +109,8 @@ const Portafolio = () => {
           <PageDetails
             title="portfolio"
             subTitle="Audio productions"
-            description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music"
-            icon={<AudioIcon />}
+            description="The secret of the sounds is that they find an inexhaustible source of expression where the vision is silent. Sound recording; Production of radio commercials; Adaptations of TV Ads; Sound Effects; Doubling; Original music."
+            icon={<AudioIcon width={screenWidth <= 500 ? 80 : 80} />}
           />
         );
 
@@ -117,6 +118,30 @@ const Portafolio = () => {
         <div>default</div>;
     }
   };
+
+  const adjustItems = () => {
+    switch (selected) {
+      case 1:
+        return '';
+
+      case 2:
+        return 'video-responsive';
+
+      case 3:
+        return 'audio-responsive';
+
+      case 4:
+        return 'audio-responsive';
+
+      case 5:
+        return 'video-responsive';
+
+      default:
+        return '';
+    }
+
+
+  }
 
   const cards = [
     {
@@ -127,7 +152,7 @@ const Portafolio = () => {
       image: img2,
       formato: "video | video adaptation",
       type: "video",
-      preview: <Play/>,
+      preview: <Play />,
       view: "view more",
     },
     {
@@ -138,7 +163,7 @@ const Portafolio = () => {
       image: img2,
       formato: "audio | video adaptation",
       type: "audio",
-      preview: <PlayMusic/>,
+      preview: <PlayMusic />,
       view: "view more",
     },
     {
@@ -149,7 +174,7 @@ const Portafolio = () => {
       image: img2,
       formato: "2D | video adaptation",
       type: "twoD",
-      preview: <Play/>,
+      preview: <Play />,
       view: "view more",
     },
     {
@@ -180,7 +205,7 @@ const Portafolio = () => {
       image: img2,
       formato: "3D | video adaptation",
       type: "threeD",
-      preview: <Play/>,
+      preview: <Play />,
       view: "view more",
     },
   ];
@@ -196,23 +221,19 @@ const Portafolio = () => {
       type={card.type}
       preview={card.preview}
       link={"/portafolio/detail"}
-      download={<DownloadIcon/>}
+      download={<DownloadIcon />}
       view={card.view}
     />
   ));
 
   return (
     <div className="portafolio">
-      <div className="bgPortafolio">
+      {/* <div className="bgPortafolio"></div> */}
+      <div className={`content ${screenWidth <= 636 ? adjustItems() : ''}`}>
+        <div className="contentPageDetail">{returnComponentSelect()}</div>
+        {returnComponentMenu()}
       </div>
-
-      <div className="content">
-          <div className="contentPageDetail">{returnComponentSelect()}</div>
-          {returnComponentMenu()}
-      </div>
-
       <div className="Content-CardsPort">{CardsPortafolio}</div>
-
       <div className="leadmore">
         <Link to="/portafolio/allProductions">
           <span>load more</span>
