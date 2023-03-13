@@ -9,7 +9,8 @@ const About = () => {
 
   return (
     <div className="about">
-      <div className="backgroundAbout"/>
+      <div className="backgroundAbout" />
+      <div className="mobile-backgroundAbout" />
       <div className="item-one">
         <span>{t("about.about")}</span>
         <h2>{t("about.header")}</h2>
