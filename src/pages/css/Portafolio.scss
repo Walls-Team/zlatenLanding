@@ -1,3 +1,4 @@
+
 .bgPortafolio {
   min-height: 520px;
   position: absolute;
@@ -5,7 +6,7 @@
   width: 100%;
 }
 
-.contentPageDetail{
+.contentPageDetail {
   width: 55%;
   margin: auto;
 }
@@ -32,11 +33,13 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 2px;
-      margin-right: 3%;
+      // margin-right: 3%;
+      margin-right: 1.5%;
       cursor: pointer;
       padding: 10px 25px;
       position: relative;
       border-radius: 8px;
+
 
       span {
         position: absolute;
@@ -55,10 +58,11 @@
 .content {
   margin-top: 0;
   width: 100%;
-  height: 34rem;
+  height: 33rem;
+  // height: 540px;
   padding-top: 4%;
   color: #fff;
-  background: #27232C;  
+  background: #27232C;
   // z-index: 1;
 }
 
@@ -107,11 +111,13 @@
   text-align: center;
   padding-top: 2em;
   color: #27232c;
-  text-decoration: none;
+  
 
   span {
     color: #27232c;
     font-size: 1.2rem;
+    font-family: 'Montserrat';
+    
   }
 }
 
@@ -130,14 +136,17 @@
     text-decoration: none;
     color: black;
   }
+
   .card {
     width: 22rem;
+
     #preview-client {
       display: block;
       margin-left: 140px;
       margin-top: 100px;
       fill: #F4F4F4;
     }
+
     #preview-client:hover {
       fill: #F8F100;
       transition: fill 0.2s ease-in-out;
@@ -145,120 +154,112 @@
   }
 }
 
-@media (max-width: 1280px) {
-  
-  .content{
-    height: 32rem;
-  }
-
-  .Content-CardsPort {
-    bottom: 140px;
-    width: 100%;
-  }
-
-  .portafolio {
-    .layout {
-      button {
-        margin-right: 1%;
-      }
-
-    }
+@media (max-width: 1024px) {
+  .content {
+    height: 34.5rem;
   }
 }
 
 @media (max-width: 912px) {
   .portafolio {
-  .content{
-    height: 42rem;
-    .top{
-      .title{
-        display: grid;
-      }
+    .contentPageDetail {
+      margin-top: 30px;
+      width: 80%;
     }
-  }
 
-  .contentPageDetail{
-    margin-top: 30px;
-    width: 80%;
-  }
     .layout {
       justify-content: center;
       display: flex;
       flex-wrap: nowrap;
       text-align: center;
-      
-      button {
-        margin-right: 20px;
-
-      }
-  }
-  .Content-CardsPort {
-    width: 100%;
-  }
-}
-
-@media (max-width: 840px) { 
-  .content{
-    height: 37rem;
-  }
-  .bgPortafolio {
-    min-height: 600px;
-  }
-}
-
-@media (max-width: 541px) {
-  }
-  .content{
-    height: 55rem;
-  }
-  .bgPortafolio {
-    min-height: 788px;
-  }
-  .portafolio {
-    .layout {
       margin: auto;
       display: block;
       width: 50%;
-      button {
-        margin-right: 0;
-      }
 
+      button {
+        margin-right: 20px;
+      }
     }
+
     .Content-CardsPort {
       width: 100%;
     }
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 636px) {
   .portafolio {
-  .content{
-    height: 70rem;
-    .top{
-      .title{
-        display: grid;
+    .layout {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: auto;
+
+      button {
+        margin-right: 0;
+
+        span {
+          right: 14px;
+        }
+      }
+    }
+
+    .content {
+      height: 710px;
+
+      .top {
+        .icon {
+          display: flex;
+          align-items: end;
+          margin-bottom: 20px;
+        }
       }
     }
   }
+}
 
-  .contentPageDetail{
-    margin-top: 30px;
-    width: 80%;
-  }
-    .layout {
-      justify-content: center;
-      flex-wrap: nowrap;
-      
-      button {
-        margin-right: 20px;
-
+@media (max-width: 415px) {
+  .portafolio {
+    .content {
+      .top {
+        .icon {
+          width: 50px;
+          display: flex;
+          align-items: end;
+          margin-bottom: 0;
+        }
       }
+    }
+
+    .Content-CardsPort {
+      bottom: 202px;
+    }
   }
-  .Content-CardsPort {
-    width: 100%;
-  }
+
+  .top {
+    h1 {
+      font-size: 40px;
+      line-height: 42px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .icon {
+      width: 50px;
+      display: flex;
+      align-items: end;
+      margin-bottom: 0;
+    }
   }
 }
 
 
+.audio-responsive {
+  height: 794px !important;
+}
 
+.video-responsive {
+  height: 840px !important;
+}

@@ -31,11 +31,13 @@
 
     h4 {
         color: #fff;
+        font-family: 'Montserrat';
         font-weight: 200;
         margin-left: 10px;
         cursor: pointer;
     }
 }
+
 .Content-CardsImg {
     display: flex;
     flex-wrap: wrap;
@@ -44,24 +46,32 @@
     margin: auto;
     padding-bottom: 3em;
     justify-content: center;
-    img{
+
+    img {
         width: 100%;
         height: 257px;
     }
+
     .card {
         box-shadow: none;
         width: 378px;
     }
-    span, h4, h3, a{
+
+    span,
+    h4,
+    h3,
+    a {
         position: absolute;
     }
 }
+
 .hidden {
     display: none;
 }
 
 .download {
 
+    font-family: 'Montserrat';
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
@@ -81,4 +91,34 @@
     width: 30%;
     text-align: center;
     margin: 20px 0px;
+}
+
+@media (max-width: 912px) {
+    .backgroundDetail {
+        height: 463px;
+    }
+}
+
+@media (max-width: 540px) {
+    .itemsBack {
+        margin: 50px 0;
+    }
+
+    .contentDetail {
+        width: 80%;
+    }
+
+    .backgroundDetail {
+        height: 62vh;
+    }
+
+    .download .label {
+        width: 53%;
+    }
+}
+
+@media (max-width: 414px) {
+    .backgroundDetail {
+        height: 356px;
+    }
 }

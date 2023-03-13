@@ -30,7 +30,6 @@ function Card({title, text, imageSource, cliente, format,type,view,id,link="/", 
            <h4>{title}</h4>
            <h3>{cliente}</h3>
            <p style={{
-            fontFamily:'Open Sans',
             fontSize: '16px',
             lineHeight: '24px',
             fontWeight: '400',
