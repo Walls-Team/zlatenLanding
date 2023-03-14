@@ -16,7 +16,6 @@ function Card({ title, text, imageSource, cliente, format, type, view, id, link 
   }
   useEffect(() => {
     setInfo(types[type])
-    console.log('//////////info ', info)
     // eslint-disable-next-line
   }, [title])
 
