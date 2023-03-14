@@ -1,4 +1,3 @@
-
 .bgPortafolio {
   min-height: 520px;
   position: absolute;
@@ -111,13 +110,13 @@
   text-align: center;
   padding-top: 2em;
   color: #27232c;
-  
+
 
   span {
     color: #27232c;
     font-size: 1.2rem;
     font-family: 'Montserrat';
-    
+
   }
 }
 
@@ -183,6 +182,14 @@
 
     .Content-CardsPort {
       width: 100%;
+    }
+  }
+
+  .top {
+    .icon {
+      display: flex;
+      align-items: end;
+      margin-bottom: 30px;
     }
   }
 }
