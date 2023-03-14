@@ -7,8 +7,8 @@ function Card({ title, text, imageSource, cliente, format, type, view, id, link 
   const [info, setInfo] = useState()
 
   const types = {
-    audio: { color: "#EBFFFF" },
-    video: { color: "#EFD9CE" },
+    audio: { color: "#EFD9CE" },
+    video: { color: "#EBFFFF" },
     twoD: { color: "#C8E2F5" },
     creative: { color: "#FFFAC9" },
     digital: { color: "#DFF0E8" },
