@@ -28,18 +28,18 @@
         "copywriting": "copywriting",
         "media": "media planning",
         "view": "view all productions"
-    }, 
+    },
     "footer": {
         "follow": "follow us on:"
-    }, 
+    },
     "portafolio": {
         "portafolio": "portfolio",
         "our": "our portfolio",
         "services": "We provide full service for the needs of TV commercials, 3D and 2D animation projects, music videos, corporate films, documentary films, PR events, etc.",
-        "productions": "all productions", 
+        "productions": "all productions",
         "video": "video",
         "digital": "digital",
-        "creative":"creative"
+        "creative": "creative"
     },
     "home": {
         "portafolio": "portfolio",
@@ -49,9 +49,9 @@
         "makes": "We makes things better",
         "projects": "What we do: For more than 20 years, we have realised all kinds of audio-visual projects: TV commercials, 3D and 2D animation projects, music videos, corporate films, documentaries films, PR events, castings, radio commercials, voice over and dubbing, etc. For our clients we also offer all kind of media services like: media planning and buying, behavioural and demographic research focussed on the target group, negotiations with media and consulting."
     },
-    "detail":{
+    "detail": {
         "back": "BACK TO ALL PROJECTS",
-        "video": "video I video adaptation"
+        "video": "video | video adaptation"
     },
     "contact": {
         "connect": "connect with us",

@@ -83,7 +83,7 @@ const DetailProduct = () => {
         </video>
 
         <div className="download">
-          <div className="label">video I video adaptation </div>
+          <div className="label">video | video adaptation </div>
           <DownloadIcon />
         </div>
 
