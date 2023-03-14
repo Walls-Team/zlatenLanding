@@ -54,10 +54,24 @@
                 margin: 0 8px;
             }
 
-            .navbar-link:focus {
-                font-weight: 600;
+            .navbar-link:focus,
+            .navbar-link:hover {
+                font-size: 17px;
+                font-weight: bold;
                 color: #27232C;
                 text-decoration: none;
+            }
+
+
+            .navbar-link-act {
+                color: #27232C;
+                text-decoration: none;
+                width: 84px;
+                font-weight: bold;
+                font-size: 16.5px;
+                line-height: 24px;
+                letter-spacing: 2px;
+                margin: 0 8px;
             }
 
             .button-yellow {
@@ -201,10 +215,23 @@
     letter-spacing: 2px;
 }
 
-.mobile-menu-link:focus {
+.mobile-menu-link:focus,
+.mobile-menu-link:hover {
     font-weight: 600;
     color: #27232C;
     text-decoration: none;
+}
+
+.mobile-menu-link-act {
+    color: #27232C;
+    text-decoration: none;
+    width: 84px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
 }
 
 .mobile-language-container {
