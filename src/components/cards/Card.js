@@ -22,8 +22,8 @@ function Card({ title, text, imageSource, cliente, format, type, view, id, link 
   return (
     <div className="card" key={id}>
       <div id='container'>
-      <Link to={'/portafolio/detail'}>
-        <div id='preview-client'>{preview}</div>
+        <Link to={'/portafolio/detail'}>
+          <div id='preview-client'>{preview}</div>
         </Link>
         <img src={imageSource} alt="" className='product--image' />
       </div>
