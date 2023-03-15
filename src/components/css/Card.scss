@@ -1,4 +1,3 @@
-
 h1,
 h2,
 h3,
@@ -6,16 +5,17 @@ h4 {
     margin: 0;
     padding: 0;
 }
-.card{
+
+.card {
     margin: 10px;
     height: 50%;
     width: 19.4rem;
     background-color: rgb(255, 255, 255);
     // box-shadow: 1px 1px 3px rgb(104, 104, 104);
-    box-shadow: 2.9px 2.9px 2px 1px rgb(0 0 0 / 10%);
+    box-shadow: 1.5px 1.5px 2px 1px rgb(0 0 0 / 10%);
     cursor: pointer;
 
-    a{
+    a {
         text-decoration: none;
         color: #27232C;
         font-weight: 400;
@@ -23,20 +23,23 @@ h4 {
         line-height: 24px;
         letter-spacing: 2px;
     }
-    h4{
+
+    h4 {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
         font-family: 'Montserrat';
     }
-    h3{
+
+    h3 {
         font-weight: 600;
         font-family: 'Montserrat';
         font-size: 21px;
         line-height: 26px;
         color: #27232C;
     }
-    span{
+
+    span {
         position: relative;
         text-align: center;
         width: 80%;
@@ -46,6 +49,7 @@ h4 {
         letter-spacing: 1px;
         margin-bottom: 8px;
     }
+
     .format {
         background: #EBFFFF;
         font-family: 'Montserrat';
@@ -53,10 +57,11 @@ h4 {
 
 
 }
+
 .card-body {
     margin: 10px 20px;
 
-    h4{
+    h4 {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -65,7 +70,7 @@ h4 {
         color: #27232C;
     }
 
-    h3{
+    h3 {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -74,11 +79,11 @@ h4 {
         color: #27232C;
     }
 
-    p{
+    p {
         font-family: 'Open Sans';
     }
 
-    .view{
+    .view {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -86,7 +91,10 @@ h4 {
         line-height: 24px;
         letter-spacing: 1px;
         text-decoration-line: underline;
-        color: #27232C
+        color: #27232C;
+        display: inline-block;
+        text-align: left;
+        margin: 5px 0 17px;
     }
 }
 
@@ -94,29 +102,35 @@ h4 {
     width: 100%;
     height: 15rem;
 }
-#container:hover{
-    
-    cursor: default;
-}
+
+
 #container {
     width: 100%;
     height: 100%;
-    
-}
-#preview-client {
-display: none;
-position: absolute;
-margin-top: 110px;
-margin-left: 165px;
-}
-#container:hover > #preview-client  {
-    display: block;
-    cursor: pointer;
+
 }
 
-.contentElementsCard{
+#container:hover {
+    cursor: default;
+}
+
+#preview-client {
+    display: none;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 165px;
+}
+
+#container:hover {
+    #preview-client {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.contentElementsCard {
     display: flex;
     justify-content: space-between;
 
-   
+
 }

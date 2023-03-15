@@ -7,8 +7,8 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const [path, setPath] = useState('/')
   const [t, i18n] = useTranslation("global");
+  // const [path, setPath] = useState('/')
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language)
@@ -17,7 +17,6 @@ const Navbar = () => {
   }
 
   const handlerLinkTo = (link) => {
-    setPath(link)
     setShowMobileMenu(false)
   }
 
@@ -33,13 +32,13 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className="item-menu">
-            <Link className={path !== '/' ? 'navbar-link' : 'navbar-link-act'} to='/' onClick={() => handlerLinkTo('/')}>{t("navbar.home")}</Link>
+            <Link className='navbar-link' to='/' onClick={() => handlerLinkTo('/')}>{t("navbar.home")}</Link>
           </div>
           <div className="item-menu">
-            <Link className={path !== '/about' ? 'navbar-link' : 'navbar-link-act'} to='/about' onClick={() => handlerLinkTo('/about')}>{t("navbar.about")}</Link>
+            <Link className='navbar-link' to='/about' onClick={() => handlerLinkTo('/about')}>{t("navbar.about")}</Link>
           </div>
           <div className="item-menu">
-            <Link className={path !== '/portafolio/allProductions' ? 'navbar-link' : 'navbar-link-act'} to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>{t("navbar.portafolio")}</Link>
+            <Link className='navbar-link' to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>{t("navbar.portafolio")}</Link>
           </div>
           <div className="item-menu">
             <Link className='link' to='/contact' onClick={() => handlerLinkTo('/contact')}>
@@ -67,16 +66,16 @@ const Navbar = () => {
       {/*menu for mobile */}
       <div className={`mobile-menu ${showMobileMenu ? 'mobile-menu-show' : 'mobile-menu-hide'}`}>
         <div className="item-menu">
-          <Link className={path !== '/' ? 'mobile-menu-link' : 'mobile-menu-link-act'} to='/' onClick={() => handlerLinkTo('/')}>{t("navbar.home")}</Link>
+          <Link className='mobile-menu-link' to='/' onClick={() => handlerLinkTo('/')}>{t("navbar.home")}</Link>
         </div>
         <div className="item-menu">
-          <Link className={path !== '/about' ? 'mobile-menu-link' : 'mobile-menu-link-act'} to='/about' onClick={() => handlerLinkTo('/about')}>{t("navbar.about")}</Link>
+          <Link className='mobile-menu-link' to='/about' onClick={() => handlerLinkTo('/about')}>{t("navbar.about")}</Link>
         </div>
         <div className="item-menu">
-          <Link className={path !== '/portafolio/allProductions' ? 'mobile-menu-link' : 'mobile-menu-link-act'} to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>{t("navbar.portafolio")}</Link>
+          <Link className='mobile-menu-link' to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>{t("navbar.portafolio")}</Link>
         </div>
         <div className="item-menu">
-          <Link className={path !== '/contact' ? 'mobile-menu-link' : 'mobile-menu-link-act'} to='/contact' onClick={() => handlerLinkTo('/contact')}>{t("navbar.connect")}</Link>
+          <Link className='mobile-menu-link' to='/contact' onClick={() => handlerLinkTo('/contact')}>{t("navbar.connect")}</Link>
         </div>
         <div className='mobile-language-container'>
           <div className="item-menu" onClick={() => changeLanguage("en")}>
