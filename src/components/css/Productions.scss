@@ -103,3 +103,10 @@
         margin: 10px auto 20px;
     }
 }
+
+@media (max-width: 540px) {
+    .item span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
