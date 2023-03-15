@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/layouts/header';
 import Productions from '../components/elements/productions';
 import './css/Home.scss';
@@ -8,6 +9,11 @@ import { useTranslation } from 'react-i18next';
 const Home = () => {
 
   const [t] = useTranslation("global");
+  const [path, setPath] = useState('/')
+
+  const handlerLinkTo = (link) => {
+    setPath(link)
+  }
 
   return (
     <div className="home">
@@ -24,7 +30,9 @@ const Home = () => {
           color: '#707070',
         }}>{t("home.great")} </p>
       </div>
-      <Productions />
+      <Link to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>
+        <Productions />
+      </Link>
       <div className='background'>
         <div className="content-text">
           <h2 style={{
