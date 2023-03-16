@@ -43,6 +43,7 @@ const OverLay = styled.div`
     top: 0;
     left: 0;
     background: rgba(0,0,0,.8);
+    
 `;
 const ContainerModal = styled.div`
     position: relative;
@@ -53,7 +54,9 @@ const ContainerModal = styled.div`
     // margin-top: 20vh;
     width: 50vw;
     background-color: rgb(255, 255, 255);
-
+    @media (max-width: 820px) {
+        width: 70%;
+    }
 `;
 const DownloadModal = styled.div`
     font-family: 'Montserrat';
@@ -68,6 +71,9 @@ const LabelModal = styled.div`
     padding: 5px;
     width: 31%;
     text-align: center;
+    @media (max-width: 1024px) {
+        width: 45%;
+    }
 `;
 
 const ButtonModal = styled.button`
