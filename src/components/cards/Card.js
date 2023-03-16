@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../css/Card.scss'
 
-function Card({state, setState, title, text, imageSource, cliente, format, type, view, id, link = "/", download, preview }) {
+function Card({ state, setState, title, text, imageSource, cliente, format, type, view, id, link = "/", download, preview }) {
   const [info, setInfo] = useState()
 
   const types = {
@@ -22,28 +22,28 @@ function Card({state, setState, title, text, imageSource, cliente, format, type,
   return (
     <div className="card" key={id}>
       <div id='container'>
-          <div id='preview-client'>{preview}</div>
-          <img src={imageSource} alt="" className='product--image' />
+        <div id='preview-client' onClick={() => setState(!state)}>{preview}</div>
+        <img src={imageSource} alt="" className='product--image' />
       </div>
-        <div className="card-body">
-          <h4>{title}</h4>
-          <h3>{cliente}</h3>
-          <p style={{
-            fontSize: '16px',
-            lineHeight: '24px',
-            fontWeight: '400',
-            color: '#707070',
-          }}
-          >{text}
-          </p>
-          <div className='contentElementsCard'>
-            <span className='format' style={{ background: info?.color || '#EBFFFF' }}>{format}</span>
-            {download}
-          </div>
-          <Link to={link}>
-            <span className='view'>{view}</span>
-          </Link>
+      <div className="card-body">
+        <h4>{title}</h4>
+        <h3>{cliente}</h3>
+        <p style={{
+          fontSize: '16px',
+          lineHeight: '24px',
+          fontWeight: '400',
+          color: '#707070',
+        }}
+        >{text}
+        </p>
+        <div className='contentElementsCard'>
+          <span className='format' style={{ background: info?.color || '#EBFFFF' }}>{format}</span>
+          {download}
         </div>
+        <Link to={link}>
+          <span className='view'>{view}</span>
+        </Link>
+      </div>
     </div>
 
   )
