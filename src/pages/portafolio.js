@@ -11,8 +11,10 @@ import {
 } from "../svg/iconsproductions";
 import img2 from "../assets/cliente1.png";
 import Card from "../components/cards/Card";
+import Modal from "../components/modal";
 
 const Portafolio = () => {
+  const [modalState, setModalState] = useState(false);
   const [selected, setSelected] = useState(1);
   const screenWidth = window.innerWidth;
 
@@ -219,6 +221,8 @@ const Portafolio = () => {
       format={card.formato}
       text={card.text}
       type={card.type}
+      state={modalState}
+      setState={setModalState}
       preview={card.preview}
       link={"/portafolio/detail"}
       download={<DownloadIcon />}
@@ -235,6 +239,9 @@ const Portafolio = () => {
       </div>
       <div className="Content-CardsPort">{CardsPortafolio}</div>
       <div className="leadmore">
+          <Modal 
+          state={modalState}
+          setState={setModalState}></Modal>
         <Link to="/portafolio/allProductions">
           <span>load more</span>
         </Link>
