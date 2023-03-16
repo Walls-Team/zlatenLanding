@@ -6,6 +6,8 @@ const src =
     "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4";
 
 const Modal = ({ state, setState }) => {
+    const screenWidth = window.innerWidth;
+
     return (
         <>
             {state &&
@@ -16,7 +18,7 @@ const Modal = ({ state, setState }) => {
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                         <ButtonModal onClick={() => setState(false)}>
-                            <Exit />
+                            <Exit width={screenWidth <= 540 && 19} />
                         </ButtonModal>
                         <DownloadModal>
                             <LabelModal>
@@ -83,4 +85,7 @@ const ButtonModal = styled.button`
     background: none;
     border: none;
     cursor: pointer;
+    @media (max-width: 820px) {
+        right:-33px;
+    }
 `;
