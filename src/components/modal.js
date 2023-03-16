@@ -57,7 +57,7 @@ const ContainerModal = styled.div`
     width: 50vw;
     background-color: rgb(255, 255, 255);
     @media (max-width: 820px) {
-        width: 70%;
+        width: 85%;
     }
 `;
 const DownloadModal = styled.div`
@@ -76,6 +76,9 @@ const LabelModal = styled.div`
     @media (max-width: 1024px) {
         width: 45%;
     }
+    @media (max-width: 1024px) {
+        width: 61%;
+    }
 `;
 
 const ButtonModal = styled.button`
@@ -86,6 +89,6 @@ const ButtonModal = styled.button`
     border: none;
     cursor: pointer;
     @media (max-width: 820px) {
-        right:-33px;
+        right:-14px;
     }
 `;
