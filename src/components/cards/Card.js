@@ -22,12 +22,9 @@ function Card({state, setState, title, text, imageSource, cliente, format, type,
   return (
     <div className="card" key={id}>
       <div id='container'>
-        <Link to={'/portafolio/detail'}>
           <div id='preview-client'>{preview}</div>
-        </Link>
-        <img src={imageSource} alt="" className='product--image' />
+          <img src={imageSource} alt="" className='product--image' />
       </div>
-      <Link to={link}>
         <div className="card-body">
           <h4>{title}</h4>
           <h3>{cliente}</h3>
@@ -43,9 +40,10 @@ function Card({state, setState, title, text, imageSource, cliente, format, type,
             <span className='format' style={{ background: info?.color || '#EBFFFF' }}>{format}</span>
             {download}
           </div>
-          <span className='view'>{view}</span>
+          <Link to={link}>
+            <span className='view'>{view}</span>
+          </Link>
         </div>
-      </Link>
     </div>
 
   )
