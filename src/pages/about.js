@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Productions from '../components/elements/productions'
 import './css/About.scss';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +7,12 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
 
   const [t] = useTranslation("global");
+
+  const [path, setPath] = useState('/')
+
+  const handlerLinkTo = (link) => {
+    setPath(link)
+  }
 
   return (
     <div className="about">
@@ -25,7 +32,9 @@ const About = () => {
         <h2>{t("about.who")}</h2>
         <p>{t("about.history")}</p>
       </div>
-      <Productions />
+      <Link to='/portafolio/allProductions' onClick={() => handlerLinkTo('/portafolio/allProductions')}>
+        <Productions />
+      </Link>
     </div>
   )
 }

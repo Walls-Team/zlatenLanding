@@ -50,6 +50,7 @@ const Productions = () => {
             {t("productions.own")}</p>
         </div>
       </div>
+      
       <div className='contentbuttonYP'>
         <ButtonYellow text="VIEW ALL PRODUCTIONS" />
       </div>

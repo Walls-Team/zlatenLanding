@@ -22,7 +22,9 @@ function Card({state, setState, title, text, imageSource, cliente, format, type,
   return (
     <div className="card" key={id}>
       <div id='container'>
-        <div id='preview-client' onClick= {() =>setState(!state)}>{preview}</div>
+        <Link to={'/portafolio/detail'}>
+          <div id='preview-client'>{preview}</div>
+        </Link>
         <img src={imageSource} alt="" className='product--image' />
       </div>
       <Link to={link}>
